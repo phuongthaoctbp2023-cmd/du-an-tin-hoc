@@ -1,0 +1,119 @@
+/* Thiết lập chung và Căn lề */
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f0d8; /* MÀU NỀN CHÍNH: Vàng Nhạt/Kem */
+    color: #302000; /* Màu chữ chính: Nâu Đen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    max-width: 750px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fcfcfc; /* Nền khu vực nội dung hơi sáng hơn nền body */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Định dạng Header */
+header {
+    text-align: center;
+    padding: 30px 0 20px 0;
+    margin-bottom: 20px;
+    /* Dùng đường viền nổi bật để tách HEADER */
+    border-bottom: 3px solid #b8860b; /* Màu Nâu Đồng */
+    border-top: 3px solid #b8860b;
+    width: 100%;
+    max-width: 750px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #302000;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.2em;
+    color: #604000; /* Màu Nâu Sáng hơn */
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* Ảnh bìa sách */
+header img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+    border: 5px solid #d4af37; /* Khung Vàng */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Định dạng tiêu đề nội dung */
+h3 {
+    border-left: 5px solid #b8860b; /* Màu Nâu Đồng */
+    padding-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #302000;
+}
+
+/* KHỐI NỘI DUNG CÓ MÀU NỀN TRẮNG VÀ CÓ KHUNG */
+article, section {
+    margin-bottom: 35px;
+    padding: 20px;
+    
+    /* MÀU NỀN MỚI: TRẮNG */
+    background-color: #ffffff; 
+    
+    /* KHUNG: Đường viền mỏng màu Nâu Đồng */
+    border: 1px solid #b8860b; 
+    border-radius: 5px;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Định dạng cho trích dẫn (blockquote) */
+blockquote {
+    /* Nền màu khác biệt hơn để nổi bật trích dẫn */
+    background-color: #fcf4e8; /* Màu kem nhạt hơn */
+    border-left: 8px solid #b8860b; /* Đường kẻ dày hơn */
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    color: #555;
+}
+
+blockquote footer {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #302000;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Cải thiện khả năng đọc */
+article p, section ul {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+section ul {
+    list-style: square;
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
